@@ -10,6 +10,8 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TRIPS_FRAGMENT = "Trips";
+    private static final String ADD_TRIP_FRAGMENT = "Add";
+    private static final String MY_TRIPS_FRAGMENT = "MyTrips";
     BottomNavigationView bottomNavigationView;
 
     @Override
@@ -32,11 +34,11 @@ public class MainActivity extends AppCompatActivity {
                             case R.id.action_trips:
                                     addFragment(TRIPS_FRAGMENT);
                                 break;
-                            case R.id.action_schedules:
-
+                            case R.id.action_add_trip:
+                                    addFragment(ADD_TRIP_FRAGMENT);
                                 break;
-                            case R.id.action_music:
-
+                            case R.id.action_my_trips:
+                                    addFragment(MY_TRIPS_FRAGMENT);
                                 break;
                         }
                         return false;
@@ -45,10 +47,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void addFragment(String tripsFragment) {
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.containter, TripsFragment.newInstance(), tripsFragment)
-                .commit();
+        if(tripsFragment.equals(TRIPS_FRAGMENT)) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.containter, TripsFragment.newInstance(), tripsFragment)
+                    .commit();
+        } else if(tripsFragment.equals(ADD_TRIP_FRAGMENT)){
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.containter, AddTripFragment.newInstance(), tripsFragment)
+                    .commit();
+        } else if(tripsFragment.equals(MY_TRIPS_FRAGMENT)){
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.containter, MyTripsFragment.newInstance(), tripsFragment)
+                    .commit();
+        }
     }
 
 

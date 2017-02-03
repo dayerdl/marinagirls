@@ -8,13 +8,13 @@
         android:title="Trips"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_schedules"
+        android:id="@+id/action_add_trip"
         android:enabled="true"
         android:icon="@drawable/ico_add"
         android:title="Create Trip"
         app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/action_music"
+        android:id="@+id/action_my_trips"
         android:enabled="true"
         android:icon="@drawable/ico_my_trips"
         android:title="My trips"
