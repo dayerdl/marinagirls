@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import marinagirls.com.model.Trip;
 
 /**
- * Created by david on 2/3/17.
+ * Created by David on 2/3/17.
  */
 public class TripsAdapter extends RecyclerView.Adapter<TripsAdapter.ViewHolder> {
 

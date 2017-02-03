@@ -11,6 +11,9 @@ import android.view.ViewGroup;
  * Created by David on 2/3/17.
  */
 public class AddTripFragment extends Fragment {
+
+    AddTripPresenter mPresenter;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
