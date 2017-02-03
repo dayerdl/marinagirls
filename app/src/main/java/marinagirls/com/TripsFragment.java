@@ -34,9 +34,9 @@ public class TripsFragment extends android.support.v4.app.Fragment {
                 = new LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(verticalLayoutmanager);
 
-        Trip t1 = new Trip();
-        Trip t2 = new Trip();
-        Trip t3 = new Trip();
+        Trip t1 = new Trip("13:30");
+        Trip t2 = new Trip("14:30");
+        Trip t3 = new Trip("22:30");
 
         ArrayList<Trip> trips = new ArrayList<>();
         trips.add(t1);

@@ -32,7 +32,8 @@ public class TripsAdapter extends RecyclerView.Adapter<TripsAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-
+        String time = mTrips.get(position).time;
+        holder.setData(time);
     }
 
     @Override
@@ -45,8 +46,6 @@ public class TripsAdapter extends RecyclerView.Adapter<TripsAdapter.ViewHolder> 
 
         private ViewHolder(View itemView) {
             super(itemView);
-
-            // Get references to image and name.
             mNameTextView = (TextView) itemView.findViewById(R.id.time);
         }
 

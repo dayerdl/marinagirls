@@ -6,7 +6,10 @@ package marinagirls.com.model;
 
 public class Trip {
 
-    String time;
+    public String time;
 
 
+    public Trip(String s) {
+        time = s;
+    }
 }
