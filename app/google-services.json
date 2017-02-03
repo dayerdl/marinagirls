@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "584994612478",
+    "firebase_url": "https://steam-insight-607.firebaseio.com",
+    "project_id": "steam-insight-607",
+    "storage_bucket": "steam-insight-607.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584994612478:android:e690e04e3846e9a6",
+        "android_client_info": {
+          "package_name": "marinagirls.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584994612478-qicfn105rgfpu4u06sil2l7bl44674eu.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "584994612478-7r6g7vlv1m9a2olvng63d3sejvtd9804.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlY4O5STsKYnRJEnmM-i5HrPAexbm3FkY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
