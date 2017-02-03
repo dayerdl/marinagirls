@@ -1,17 +1,15 @@
 package marinagirls.com;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
+
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TRIPS_FRAGMENT = "Trips";
     BottomNavigationView bottomNavigationView;
 
     @Override
@@ -30,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                         switch (item.getItemId()) {
                             case R.id.action_trips:
-
+                                    addFragment(TRIPS_FRAGMENT);
                                 break;
                             case R.id.action_schedules:
 
@@ -42,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
                         return false;
                     }
                 });
+    }
+
+    private void addFragment(String tripsFragment) {
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.containter, TripsFragment.newInstance(), tripsFragment)
+                .commit();
     }
 
 

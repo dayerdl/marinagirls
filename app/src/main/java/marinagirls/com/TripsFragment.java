@@ -10,11 +10,19 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
+import marinagirls.com.model.Trip;
+
 /**
  * Created by david on 2/3/17.
  */
 
-public class TripsFragment extends Fragment {
+public class TripsFragment extends android.support.v4.app.Fragment {
+
+    public static TripsFragment newInstance() {
+        return new TripsFragment();
+    }
 
     @Nullable
     @Override
@@ -22,10 +30,24 @@ public class TripsFragment extends Fragment {
         final View view = inflater.inflate(R.layout.trips_layout_list, container, false);
         final Activity activity = getActivity();
         final RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
-        RecyclerView.LayoutManager lm = new LinearLayoutManager(activity);
-        recyclerView.setLayoutManager(lm);
-        recyclerView.setAdapter(new TripsAdapter());
+        LinearLayoutManager verticalLayoutmanager
+                = new LinearLayoutManager(activity, LinearLayoutManager.VERTICAL, false);
+        recyclerView.setLayoutManager(verticalLayoutmanager);
+
+        Trip t1 = new Trip();
+        Trip t2 = new Trip();
+        Trip t3 = new Trip();
+
+        ArrayList<Trip> trips = new ArrayList<>();
+        trips.add(t1);
+        trips.add(t2);
+        trips.add(t3);
+
+
+        recyclerView.setAdapter(new TripsAdapter(getActivity(),trips));
 
         return view;
     }
+
+
 }
