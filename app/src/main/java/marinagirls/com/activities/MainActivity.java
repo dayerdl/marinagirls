@@ -1,4 +1,4 @@
-package marinagirls.com;
+package marinagirls.com.activities;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;
@@ -8,7 +8,9 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import marinagirls.com.activities.FacebookLoginActivity;
+import marinagirls.com.fragments.MyTripsFragment;
+import marinagirls.com.R;
+import marinagirls.com.fragments.TripsFragment;
 
 
 public class MainActivity extends AppCompatActivity {

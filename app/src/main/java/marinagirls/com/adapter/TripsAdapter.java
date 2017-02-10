@@ -1,4 +1,4 @@
-package marinagirls.com;
+package marinagirls.com.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import marinagirls.com.R;
 import marinagirls.com.model.Trip;
 
 /**

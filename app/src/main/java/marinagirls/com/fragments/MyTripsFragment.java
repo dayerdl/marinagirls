@@ -1,4 +1,4 @@
-package marinagirls.com;
+package marinagirls.com.fragments;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
+import marinagirls.com.R;
+import marinagirls.com.adapter.TripsAdapter;
 import marinagirls.com.model.Trip;
 
 /**
